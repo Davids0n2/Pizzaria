@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'archivo';
+    src: url(fontes/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'interh';
+    src: url(fontes/Hachi_Maru_Pop/HachiMaruPop-Regular.ttf);
+}
+
+body{
+    font-family: 'archivo', sans-serif;
+
+}
+
+main{
+    background: url(imagens/foiakk.png) center  no-repeat;
+    background-size: cover;
+}
