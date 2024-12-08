@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'archivo';
-    src: url(fontes/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+    src: url(fontes/Archivo/static/Archivo-Light.ttf);
 }
 
 @font-face {
@@ -11,12 +11,153 @@
     src: url(fontes/Hachi_Maru_Pop/HachiMaruPop-Regular.ttf);
 }
 
-body{
-    font-family: 'archivo', sans-serif;
+
+
+:root{
+    --amarelo-geral: #ffaa18;
+    --dark-principal: #2e2e2e;
+    --hex: #ffdf9481;
 
 }
 
-main{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    position: relative;
+    background: url(imagens/forno.jpeg) center center no-repeat  ;
+    height: 400px;
+    background-size: cover;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'interh' , sans-serif;
+    
+}
+
+header::before {   
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
+    z-index: 1; 
+}
+
+
+header h1, h2, p{
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header h1 {
+    font-size: 6em;
+    color: white;
+
+}
+
+header p{
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+}
+
+
+.pizzaria-header h2{
+    color: white;
+    font-size: 1.8em;
+}
+
+#span1{
+    color: var(--amarelo-geral);
+    font-size: 1em;
+}
+
+
+
+#span2{
+    color: red;
+}
+
+#span3{
+    color: rgb(52, 255, 52);
+}
+
+/*conteudo*/
+
+article{
     background: url(imagens/foiakk.png) center  no-repeat;
     background-size: cover;
+    padding: 20px;
+}
+
+article h1{
+    font-size: 2em;
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+}
+
+.conteiner-pizzas{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.pizzas{
+    text-align: center;
+    height: 340px;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.329);
+}
+
+.pizzas img{
+    height: 120px;
+    width: 120px;
+    border: 1px solid red;
+}
+
+.imgc{
+    top: -10%;
+    transform: translatey(-15%);
+    
+}
+
+.pizzas h1{
+    font-size: 1.5em;
+
+}
+
+.pizzas h1, p{
+    font-family: 'archivo', sans-serif;
+    font-style: normal;
+    margin: 20px;
+
+}
+
+.preco{
+    font-size: 2em;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(255, 200, 50);
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
 }
