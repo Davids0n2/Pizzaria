@@ -16,7 +16,7 @@
 :root{
     --amarelo-geral: #ffaa18;
     --dark-principal: #2e2e2e;
-    --hex: #ffdf9481;
+    --hex: #ffdf94e8;
 
 }
 
@@ -26,10 +26,9 @@
 }
 
 
-
 header{
     position: relative;
-    background: url(imagens/forno.jpeg) center center no-repeat  ;
+    background: url(imagens/image-1-D8clx7jW.png) center center no-repeat  ;
     height: 400px;
     background-size: cover;
     display: flex;    
@@ -37,6 +36,7 @@ header{
     justify-content: center;
     flex-direction: column;
     font-family: 'interh' , sans-serif;
+    margin-bottom: 50px;
     
 }
 
@@ -68,6 +68,10 @@ header h1 {
 header p{
     color: rgb(255, 255, 255);
     font-size: 1.1em;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'interh', sans-serif;
+
 }
 
 
@@ -94,16 +98,18 @@ header p{
 /*conteudo*/
 
 article{
-    background: url(imagens/foiakk.png) center  no-repeat;
+    background: url(imagens/bg-By2zwNzR.jpg) center center no-repeat;
     background-size: cover;
-    padding: 20px;
+    
 }
 
-article h1{
-    font-size: 2em;
-    margin: 0px 0px 50px 0px;
+article h1:first-child{
+    font-family: 'archivo', sans-serif;
+    padding: 20px;
     text-align: center;
+    font-size: 1.5em;
 }
+
 
 .conteiner-pizzas{
     background-size: cover;
@@ -112,23 +118,23 @@ article h1{
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 
 .pizzas{
+    background-color: rgba(255, 255, 255, 0.582);
     text-align: center;
     height: 340px;
     width: 300px;
-    margin: 5px;
+    margin: 100px 0px 100px 5px;
     padding: 5px;
     border-radius: 12px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.329);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.267);
+
 }
 
 .pizzas img{
     height: 120px;
     width: 120px;
-    border: 1px solid red;
 }
 
 .imgc{
@@ -155,9 +161,54 @@ article h1{
 
 button{
     padding: 10px;
-    background-color: rgb(255, 200, 50);
+    background-color: rgb(255, 187, 0);
     border-radius: 20px;
-    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.178);
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
 }
+
+button:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+
+/*Aside*/
+
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+
+aside button{
+    margin: 10px;
+}
+
+.img-asi img{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.aside-t{
+    text-align: justify;
+    height: 350px;
+    width: 450px;
+}
+
+.aside-t h1{
+    font-family: 'archivo', sans-serif;
+    margin: 20px;
+    font-size: 1.6em;
+}
+
+
